@@ -29,6 +29,18 @@
             }
         }
     </script>
+    <script>
+        function generateOverlayToanTok() {
+            let username = $('#uniqueIdInput').val();
+            let url = `/toantok.html?username=${username}&showLikes=1&showChats=1&showGifts=1&showFollows=1&showJoins=1&bgColor=rgb(24,23,28)&fontColor=rgb(227,229,235)&fontSize=1.3em`;
+
+            if (username) {
+                window.open(url, '_blank');
+            } else {
+                alert("Enter username");
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="head">
@@ -45,6 +57,8 @@
         <input type="text" id="uniqueIdInput">
         <input type="button" id="connectButton" value="connect">
         <a href="#" onclick="generateOverlay()">Generate Overlay URL</a>
+        <!-- vanana_moazmoaz -->
+        <a href="#" onclick="generateOverlayToanTok()">toan-tok</a>
     </div>
 
     <table class="splitstatetable">

@@ -111,7 +111,7 @@ function addGiftItem(data) {
 
     let streakId = data.userId.toString() + '_' + data.giftId;
 
-    let html = `
+    let html = /*html*/`
         <div data-streakid=${isPendingStreak(data) ? streakId : ''}>
             <img class="miniprofilepicture" src="${data.profilePictureUrl}">
             <span>
